@@ -1,0 +1,24 @@
+
+RETAIL SUPERSTORE — DATA ANALYSIS REPORT
+==========================================
+Total Revenue   : $2,297,200.86
+Total Profit    : $286,397.02
+Profit Margin   : 12.47%
+Total Orders    : 5009
+Total Customers : 793
+
+KEY FINDINGS
+------------
+1. Best region     : West
+2. Best category   : Technology
+3. Worst category  : Furniture
+4. Heavy discounts (40%+) cause negative profit
+5. Sales peak in Q4 every year
+
+RECOMMENDATIONS
+---------------
+- Cap discounts at 20% maximum
+- Invest in Technology category
+- Fix pricing in Furniture category
+- Prepare for Q4 demand surge
+- Focus expansion in West region
