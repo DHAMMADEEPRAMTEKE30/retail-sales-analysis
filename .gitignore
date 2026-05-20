@@ -1,0 +1,38 @@
+gitignore_content = """# Virtual Environment — never upload this
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# OS generated files
+.DS_Store          # Mac
+Thumbs.db          # Windows
+desktop.ini
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Environment variables (keep secrets safe)
+.env
+
+# Pytest
+.pytest_cache/
+
+# VS Code settings
+.vscode/
+"""
+
+with open('../.gitignore', 'w', encoding='utf-8') as f:
+    f.write(gitignore_content)
+
+print(".gitignore created successfully!")
