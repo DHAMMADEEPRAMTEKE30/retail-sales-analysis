@@ -16,22 +16,23 @@ Built using `pandas`, `numpy`, `matplotlib`, and `seaborn`.
 ```
 retail_analysis/
 │
+├── retail_report.html                # 🌐 Interactive HTML report (live on GitHub Pages)
+│
 ├── data/
 │   └── Sample - Superstore.csv       # Raw dataset (9,994 records)
 │
 ├── notebooks/
-│   └── retail_analysis.ipynb         # Full analysis notebook
+│   └── retail_analysis.ipynb         # Full Python analysis notebook
 │
 ├── outputs/
 │   ├── chart1_category.png           # Sales & Profit by Category
 │   ├── chart2_region.png             # Profit by Region
-│   ├── chart3_top_products.png       # Top 10 Products
+│   ├── chart3_top_products.png       # Top 10 Most Profitable Products
 │   ├── chart4_discount.png           # Discount Impact on Profit
 │   ├── chart5_monthly_trend.png      # Monthly Sales Trend (2014–2017)
-│   ├── final_report.txt              # Text summary report
-│   └── retail_report.html            # Interactive HTML report website
+│   └── final_report.txt              # Text summary report
 │
-├── .gitignore                        # Files excluded from Git
+├── .gitignore                        # Excludes .venv and cache files
 ├── requirements.txt                  # Python dependencies
 └── README.md                         # This file
 ```
@@ -42,8 +43,8 @@ retail_analysis/
 
 | # | Finding |
 |---|---------|
-| 1 | **Technology** is the most profitable category ($145K profit on $836K sales) |
-| 2 | **Furniture** barely breaks even — only 2.5% profit margin on $742K sales |
+| 1 | **Technology** is the most profitable category — $145K profit on $836K sales |
+| 2 | **Furniture** barely breaks even — only 2.5% profit margin on $742K in sales |
 | 3 | **West region** leads in both sales ($725K) and profit ($108K) |
 | 4 | Discounts above **40% cause average losses of $107 per order** |
 | 5 | Sales **peak every November** — Q4 surge is consistent across all years |
@@ -87,8 +88,12 @@ pip install -r requirements.txt
 jupyter notebook notebooks/retail_analysis.ipynb
 ```
 
-### 4. View the HTML report
-Open `outputs/retail_report.html` in any browser — no internet needed.
+### 4. View the live report
+Open in browser directly:
+```
+https://dhammadeepramteke30.github.io/retail-sales-analysis/retail_report.html
+```
+Or open `retail_report.html` locally — no internet needed.
 
 ---
 
@@ -113,15 +118,17 @@ Open `outputs/retail_report.html` in any browser — no internet needed.
 | Profit Margin | 12.47% |
 | Total Orders | 5,009 |
 | Total Customers | 793 |
-| Best Region | West |
-| Best Category | Technology |
-| Worst Category | Furniture |
+| Best Region | West ($108K profit) |
+| Best Category | Technology ($145K profit) |
+| Worst Category | Furniture (2.5% margin) |
+| Peak Month | November 2017 ($118,447) |
+| Top Product | Canon imageCLASS 2200 ($25,199) |
 
 ---
 
 ## 📌 Recommendations
 
-1. **Cap all discounts at 20%** — discounts above 20% generate losses on every order
+1. **Cap all discounts at 20%** — discounts above 20% generate losses on every single order
 2. **Invest in Technology** — highest revenue and highest profit category
 3. **Fix Furniture pricing** — $742K in sales but only $18K profit (2.5% margin)
 4. **Focus expansion in West region** — leads in both sales and profit
